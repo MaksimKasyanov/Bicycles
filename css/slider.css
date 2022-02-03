@@ -1,0 +1,114 @@
+section:first-child{
+	height: 650px;
+	margin: 50px 0 50px;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+
+section:first-child div {
+	position: relative;
+	margin: 0 auto;
+	height: 350px;
+}
+section:first-child article {
+	width: 100%;
+	height: 350px;
+	background-color: rgba(255, 255, 255, 0.102);
+	overflow: hidden;
+}
+section:first-child ul {
+	width: 300%;
+	height: 300px;
+	line-height: 0;
+	transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+	display: flex;
+}
+section:first-child li {
+	width: 400px;
+	height: 350px;
+	padding: 20px 20px 20px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+section:first-child li p{
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section:first-child img {
+	width: 100%;
+	height: 210px;
+	opacity: 99%;
+}
+section:first-child li:nth-child(-n+9) img{
+	box-shadow: 0px 0px 15px #ff4141;
+}
+section:first-child li:nth-child(-n+6) img{
+	box-shadow: 0px 0px 15px #57ff7c;
+}
+section:first-child li:nth-child(-n+3) img{
+	box-shadow: 0px 0px 15px #5285fd;
+}
+section:first-child li:nth-child(1),
+section:first-child li:nth-child(4),
+section:first-child li:nth-child(7){
+	padding-left: 20px;
+}
+section:first-child input:checked ~ div {
+	max-width: calc(100% - 200px);
+}
+section:first-child input {
+	display: none;
+}
+#switch1:checked ~ p label:nth-child(3),
+#switch2:checked ~ p label:nth-child(1),
+#switch3:checked ~ p label:nth-child(2) {
+	position: absolute;
+	top: 50%;
+	left: -100px;
+	display: block;
+	height: 68px;
+	width: 68px;
+	background: url("../assets/prev.svg") no-repeat;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-position: center center;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+#switch1:checked ~ p label:nth-child(2),
+#switch2:checked ~ p label:nth-child(3),
+#switch3:checked ~ p label:nth-child(1) {
+	position: absolute;
+	top: 50%;
+	right: -100px;
+	display: block;
+	height: 68px;
+	width: 68px;
+	background: url("../assets/next.svg") no-repeat;
+	background-color: rgba(255, 255, 255, 0.2);
+	background-position: center center;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+#switch1:checked ~ article div ul {
+	margin-left: 0;
+}
+#switch2:checked ~ article div ul {
+	margin-left: -100%;
+}
+#switch3:checked ~ article div ul {
+	margin-left: -200%;
+}
+p label {
+	transition: opacity 0.2s ease-out;
+}
+p label:hover {
+	opacity: 0.6;
+}

@@ -1,0 +1,137 @@
+section:nth-child(2){
+	width: 100%;
+	padding: 0 30px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.45);
+	height: 400px;
+}
+section:nth-child(2) article {
+	background: none;
+	justify-content: space-between;
+	display: flex;
+	max-width: 1440px;
+	width: 100%;
+	height: 200px;
+}
+section:nth-child(2) > div {
+	/* width: 100%; */
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+section:nth-child(2) article div {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border-radius: 50%;
+	overflow: hidden;
+}
+section:nth-child(2) article div p {
+	z-index: 6;
+	position: relative;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background-color: #0c0a0a;
+	border-radius: 50%;
+	box-shadow: inset 2px 4px 10px 4px rgba(255, 255, 255, 0.25);
+	transition: all 0.5s;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+section:nth-child(2) article div p:hover {
+	box-shadow: inset 0px 0px 5px 1px rgba(255, 255, 255, 0.25);
+}
+section:nth-child(2) article div:nth-child(1) p:hover + span,
+section:nth-child(2) article div:nth-child(5) p:hover + span {
+	transition: all 0.75s;
+	top: calc(-30% + 190px);
+	box-shadow: 2px 4px 30px 160px rgba(26, 251, 75, 0.7);
+}
+section:nth-child(2) article div:nth-child(1) p:hover + span::before,
+section:nth-child(2) article div:nth-child(5) p:hover + span::before {
+	box-shadow: 2px 4px 30px 160px rgba(26, 251, 75, 0.7);
+}
+section:nth-child(2) article div:nth-child(2) p:hover + span,
+section:nth-child(2) article div:nth-child(4) p:hover + span {
+	top: calc(-60% + 190px);
+	box-shadow: 2px 4px 30px 160px rgba(238, 241, 28, 0.4);
+	transition: all 0.75s;
+}
+section:nth-child(2) article div:nth-child(2) p:hover + span::before,
+section:nth-child(2) article div:nth-child(4) p:hover + span::before {
+	box-shadow: 2px 4px 30px 160px rgba(251, 255, 29, 0.637);
+}
+section:nth-child(2) article div:nth-child(3) p:hover + span {
+	top: calc(-80% + 190px);
+	box-shadow: 2px 4px 25px 160px rgba(241, 46, 28, 1);
+	transition: all 0.75s;
+}
+section:nth-child(2) article div:nth-child(3) p:hover + span::before {
+	box-shadow: 2px 4px 25px 160px rgba(241, 46, 28, 1);
+}
+section:nth-child(2) article div p::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.25);
+	transition: all 1s;
+}
+section:nth-child(2) article div p:hover::before {
+	box-shadow: 2px 4px 15px 10px rgba(255, 255, 255, 0.25);
+}
+section:nth-child(2) article span {
+	position: relative;
+	top: calc(20% + 160px);
+	left: 0%;
+	z-index: 5;
+	width: 10%;
+	height: 10%;
+	background-color: rgba(26, 251, 75, 0.1);
+	transition: all 1.5s;
+}
+section:nth-child(2) article span::before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 1.5s;
+	box-shadow: 2px 4px 45px 160px rgba(255, 255, 255, 0.1);
+}
+section:nth-child(2) article div span::before {
+	box-shadow: 2px 4px 45px 160px rgba(26, 251, 75, 0);
+}
+
+section:nth-child(2) article > div:nth-child(1) p:first-child,
+section:nth-child(2) article > div:nth-child(2) p:first-child,
+section:nth-child(2) article > div:nth-child(3) p:first-child,
+section:nth-child(2) article > div:nth-child(4) p:first-child,
+section:nth-child(2) article > div:nth-child(5) p:first-child {
+	background-image: url("../assets/rules/left-bicycle.svg");
+	background-size: 75%;
+	background-position: center center;
+}
+section:nth-child(2) article > div:nth-child(2) p:first-child {
+	background-image: url("../assets/rules/left-crutch.svg");
+	background-size: 60%;
+}
+section:nth-child(2) article > div:nth-child(3) p:first-child {
+	background-image: url("../assets/rules/tambourine.svg");
+	background-size: 40%;
+}
+section:nth-child(2) article > div:nth-child(4) p:first-child {
+	background-image: url("../assets/rules/right-crutch.svg");
+	background-size: 60%;
+}
+section:nth-child(2) article > div:nth-child(5) p:first-child {
+	background-image: url("../assets/rules/right-bicycle.svg");
+}

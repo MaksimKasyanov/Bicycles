@@ -1,0 +1,63 @@
+header div:nth-child(1) {
+	position: absolute;
+	top: 0;
+	height: 160px;
+	width: 100%;
+	padding: 0 30px;
+	background-color: #181818;
+	display: flex;
+	justify-content: center;
+}
+header div:nth-child(1) div {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1440px;
+}
+header div:nth-child(1) div a {
+	display: flex;
+	align-items: center;
+}
+header div:nth-child(1) div img {
+	width: 120px;
+	height: 120px;
+}
+header div:nth-child(1) div span {
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	margin-left: 10px;
+	width: 100px;
+}
+body > div:nth-child(1) {
+	position: fixed;
+	top: 160px;
+	left: 0;
+	height: 5px;
+	width: 100%;
+	z-index: 999;
+	background: rgb(79, 91, 255);
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+}
+header ul {
+	display: flex;
+}
+header ul a {
+	font-size: 22px;
+	padding: 20px;
+	transition: ease-in 0.5s;
+	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+header ul a:last-child {
+	padding-right: 0;
+}
+header nav ul li:nth-child(odd) a:hover {
+	text-shadow: 0px -22px 2px #5e6eff;
+}
+header nav ul li:nth-child(even) a:hover {
+	text-shadow: 0px 22px 2px #5e6eff;
+}

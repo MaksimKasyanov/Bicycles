@@ -1,0 +1,71 @@
+
+html::-webkit-scrollbar {
+	width: 0px;
+}
+main::-webkit-scrollbar {
+	width: 10px;
+}
+main::-webkit-scrollbar-track {
+	background-color: #00000060;
+	width: 10px;
+	height: 1000px;
+}
+main::-webkit-scrollbar-thumb {
+	background-color: #5e6eff;
+	width: 10px;
+	height: 5px;
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+	overflow-x: hidden;
+	background-color: #181818;
+	background-color: white;
+	position: relative;
+	font-family: "Cinzel Decorative", cursive;
+	overflow-y: scroll;
+	color: #fff;
+}
+header {
+	top: 0;
+	position: fixed;
+	z-index: 12;
+	height: 160px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Bebas Neue", cursive;
+	box-shadow: 0px 0px 25px #fff;
+}
+main {
+	padding-top: 160px;
+	width: 100%;
+	background-color: #181818;
+}
+h2 {
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	font-size: 35px;
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+	height: 50px;
+	background: linear-gradient(
+		90deg,
+		rgba(79, 91, 255, 1) 0%,
+		rgba(0, 0, 0, 1) 25%,
+		rgba(0, 0, 0, 1) 75%,
+		rgba(79, 91, 255, 1) 100%
+	);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
