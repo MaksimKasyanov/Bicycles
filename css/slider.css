@@ -191,7 +191,7 @@ p label:hover {
 	section:first-child {
 		height: 550px;
 	}
-	
+
 	section:first-child > div {
 		width: 700px !important;
 		height: 330px;
@@ -201,7 +201,7 @@ p label:hover {
 		height: 50px;
 	}
 
-	section:first-child article{
+	section:first-child article {
 		width: 700px;
 		margin: 0 auto;
 	}
@@ -229,13 +229,13 @@ p label:hover {
 }
 
 @media (max-width: 768px) {
-	h2{
+	h2 {
 		font-size: 20px;
 	}
 	section:first-child {
 		height: 450px;
 	}
-	
+
 	section:first-child > div {
 		width: 500px !important;
 		height: 230px;
@@ -246,23 +246,40 @@ p label:hover {
 	section:first-child li p {
 		height: 50px;
 	}
-	section:first-child li p a{
+	section:first-child li p a {
 		font-size: 12px;
 	}
-	section:first-child article{
+	section:first-child article {
 		width: 500px;
 		margin: 0 auto;
 	}
 	section:first-child article div {
 		width: 500px;
 	}
+	section:first-child li {
+		padding: 10px 10px 10px 0px;
+	}
+	section:first-child li:nth-child(1),
+	section:first-child li:nth-child(4),
+	section:first-child li:nth-child(7) {
+		padding-left: 10px;
+	}
+	section:first-child li:nth-child(-n + 9) img {
+		box-shadow: 0px 0px 8px #ff4141;
+	}
+	section:first-child li:nth-child(-n + 6) img {
+		box-shadow: 0px 0px 8px #57ff7c;
+	}
+	section:first-child li:nth-child(-n + 3) img {
+		box-shadow: 0px 0px 8px #5285fd;
+	}
 	#switch1:checked ~ p label:nth-child(3),
 	#switch2:checked ~ p label:nth-child(1),
 	#switch3:checked ~ p label:nth-child(2) {
 		top: -42px;
 		left: 50px;
-		height: 38px;
-		width: 38px;
+		height: 30px;
+		width: 30px;
 		background-size: 40%;
 	}
 	#switch1:checked ~ p label:nth-child(2),
@@ -273,5 +290,55 @@ p label:hover {
 		height: 30px;
 		width: 30px;
 		background-size: 40%;
+	}
+}
+
+@media (max-width: 568px) {
+	h2 {
+		font-size: 18px;
+		padding-top: 50px !important;
+	}
+	main{
+		padding-top: 70px;
+	}
+	section:first-child {
+		height: 270px;
+		padding: 0 10px;
+	}
+
+	section:first-child > div {
+		width: 300px !important;
+		height: 130px;
+	}
+	section:first-child li {
+		width: 100px;
+		height: 130px;
+	}
+	section:first-child li p {
+		height: 50px;
+	}
+	section:first-child li p a {
+		font-size: 12px;
+	}
+	section:first-child article {
+		width: 300px;
+		margin: 0 auto;
+	}
+	section:first-child article div {
+		width: 300px;
+	}
+	#switch1:checked ~ p label:nth-child(3),
+	#switch2:checked ~ p label:nth-child(1),
+	#switch3:checked ~ p label:nth-child(2) {
+		left: 0px;
+		height: 20px;
+		width: 20px;
+	}
+	#switch1:checked ~ p label:nth-child(2),
+	#switch2:checked ~ p label:nth-child(3),
+	#switch3:checked ~ p label:nth-child(1) {
+		right: 0px;
+		height: 20px;
+		width: 20px;
 	}
 }

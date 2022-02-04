@@ -83,11 +83,14 @@ body > div:nth-child(1) {
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 568px) {
 	header,
 	header div {
 		padding: 0 15px;
 		height: 70px;
+	}
+	body > div:nth-child(1){
+		top: 70px;
 	}
 	header div img{
 		height: 60px;
