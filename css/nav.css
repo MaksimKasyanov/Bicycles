@@ -80,7 +80,9 @@ body > div:nth-child(1) {
 		margin: 0 5px;
 		padding: 20px 5px;
 	}
-
+	header nav ul li:nth-child(odd) a:hover {
+		text-shadow: 0px 22px 2px #5e6eff;
+	}
 }
 
 @media (max-width: 568px) {
@@ -99,5 +101,12 @@ body > div:nth-child(1) {
 	header div span {
 		font-size: 16px;
 		width: 60px;
+	}
+	footer {
+		width: 100%;
+		bottom: 0;
+		margin: 0;
+		height: 20px;
+		font-size: 10px;
 	}
 }

@@ -21,6 +21,8 @@ section:nth-child(3) form > div {
 }
 section:nth-child(3) form div p {
 	margin: 0 0 10px;
+	font-size: 30px;
+	padding-left: 20px;
 }
 section:nth-child(3) form > label {
 	position: relative;
@@ -46,7 +48,6 @@ section:nth-child(3) form label:hover {
 section:nth-child(3) form input {
 	display: none;
 }
-
 section:nth-child(3) form > label:before {
 	content: "\276F";
 	position: absolute;
@@ -66,7 +67,6 @@ section:nth-child(3) div:nth-child(3) input::-webkit-inner-spin-button {
 section:nth-child(3) div:nth-child(3) input:invalid {
 	box-shadow: 0px 0px 5px red;
 }
-
 section:nth-child(3) form input:checked + label {
 	background-color: rgba(248, 248, 248, 0.233);
 	color: #fff;
@@ -84,10 +84,6 @@ section:nth-child(3) form input:checked + label + div {
 	color: #000;
 	padding: 20px 30px 10px;
 	transition: all 0.5s;
-}
-section:nth-child(3) div p {
-	font-size: 30px;
-	padding-left: 20px;
 }
 section:nth-child(3) div input {
 	display: block;
@@ -132,9 +128,7 @@ section:nth-child(3) label:nth-child(8) span::before {
 section:nth-child(3) label:nth-child(11) span::before {
 	content: "IV";
 }
-
 section:nth-child(3) form div:nth-child(2) {
-	height: 120px;
 	display: flex;
 }
 section:nth-child(3) form div:nth-child(2) div {
@@ -145,7 +139,6 @@ section:nth-child(3) form div:nth-child(2) div {
 	align-items: center;
 	width: 100%;
 }
-
 section:nth-child(3) form div:nth-child(2) div label {
 	height: 100px;
 	display: flex;
@@ -157,7 +150,6 @@ section:nth-child(3) form div:nth-child(2) div label {
 section:nth-child(3) textarea {
 	width: 100%;
 }
-
 section:nth-child(3) form div:nth-child(2) input {
 	appearance: none;
 	position: absolute;
@@ -170,7 +162,6 @@ section:nth-child(3) form div:nth-child(2) input {
 	height: 100px;
 	margin-left: -20px;
 }
-
 section:nth-child(3) input::before {
 	content: "";
 	position: absolute;
@@ -199,6 +190,12 @@ section:nth-child(3) input::after {
 	border: 1px solid #ccc;
 	transition: all 0.5s ease;
 }
+section:nth-child(3) form div:nth-child(12) input::before{
+	left: 150px;
+}
+section:nth-child(3) form div:nth-child(12) input::after{
+	left: 142px;
+}
 section:nth-child(3) input:checked + label {
 	color: black;
 }
@@ -218,7 +215,6 @@ section:nth-child(3) div label {
 	width: 100%;
 	color: #ccc;
 }
-
 section:nth-child(3) form div:nth-child(12) input{
 	appearance: none;
 	width: 0;
@@ -238,21 +234,54 @@ section:nth-child(3) form div:nth-child(12) label{
 	align-items: center;
 	margin-bottom: 30px;
 }
-
 section:nth-child(3) form div:nth-child(12) label p{
-	padding-left: 100px;
 	margin: 0;
+	font-size: 26px;
 }
 section:nth-child(3) form button{
 	color: #fff;
 	background-color: #181818;
-	width: 140px;
+	width: 45%;
 	height: 40px;
-	margin-right: 20px;
+}
+section:nth-child(3) form div button:nth-child(3){
+	margin-right: 3%;
 }
 section:nth-child(3) form button:hover{
 	border-radius: 5px;
 	transition: all 0.7s;
 	color: #181818;
 	background-color: #fff;
+}
+
+@media (max-width: 1060px) {
+	section:nth-child(3) form > label{
+		font-size: 28px;
+		height: 60px;
+	}
+	section:nth-child(3) form input + label:before {
+		margin-top: -5px;
+	}
+	section:nth-child(3) label span {
+		position: relative;
+		top: -1px;
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+	}
+	section:nth-child(3) form div p {
+		margin: 0 0 10px;
+		font-size: 20px;
+		padding-left: 10px;
+	}
+	section:nth-child(3) form div input {
+		font-size: 18px;
+	}
+	section:nth-child(3) form div:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+	}
+	section:nth-child(3) form div:nth-child(2) div{
+		margin: 20px 0;
+	}
 }
