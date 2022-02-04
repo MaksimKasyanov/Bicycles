@@ -1,33 +1,53 @@
-header div:nth-child(1) {
+header div {
 	position: absolute;
 	top: 0;
 	height: 160px;
 	width: 100%;
+	max-width: 1440px;
 	padding: 0 30px;
 	background-color: #181818;
 	display: flex;
-	justify-content: center;
-}
-header div:nth-child(1) div {
-	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	max-width: 1440px;
+	
 }
-header div:nth-child(1) div a {
+header div a {
 	display: flex;
 	align-items: center;
 }
-header div:nth-child(1) div img {
+header div img {
 	width: 120px;
 	height: 120px;
 }
-header div:nth-child(1) div span {
+header div span {
 	color: #fff;
 	text-align: center;
 	font-size: 24px;
 	margin-left: 10px;
 	width: 100px;
+}
+header nav {
+	display: flex;
+	align-items: center;
+}
+header ul {
+	display: flex;
+}
+header ul a {
+	font-size: 22px;
+	padding: 20px 10px;
+	margin: 0 10px;
+	transition: ease-in 0.5s;
+	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+header ul li:last-child a {
+	padding-right: 0;
+	margin-right: 0;
+}
+header nav ul li:nth-child(odd) a:hover {
+	text-shadow: 0px -22px 2px #5e6eff;
+}
+header nav ul li:nth-child(even) a:hover {
+	text-shadow: 0px 22px 2px #5e6eff;
 }
 body > div:nth-child(1) {
 	position: fixed;
@@ -39,25 +59,42 @@ body > div:nth-child(1) {
 	background: rgb(79, 91, 255);
 }
 
-header nav {
-	display: flex;
-	align-items: center;
+@media (max-width: 1060px) {
+	header,
+	header div {
+		height: 100px;
+	}
+	body > div:nth-child(1){
+		top: 100px;
+	}
+	header div img{
+		height: 80px;
+		width: 80px;
+	}
+	header div span {
+		font-size: 19px;
+		width: 80px;
+	}
+	header ul a {
+		font-size: 16px;
+		margin: 0 5px;
+		padding: 20px 5px;
+	}
+
 }
-header ul {
-	display: flex;
-}
-header ul a {
-	font-size: 22px;
-	padding: 20px;
-	transition: ease-in 0.5s;
-	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-header ul a:last-child {
-	padding-right: 0;
-}
-header nav ul li:nth-child(odd) a:hover {
-	text-shadow: 0px -22px 2px #5e6eff;
-}
-header nav ul li:nth-child(even) a:hover {
-	text-shadow: 0px 22px 2px #5e6eff;
+
+@media (max-width: 425px) {
+	header,
+	header div {
+		padding: 0 15px;
+		height: 70px;
+	}
+	header div img{
+		height: 60px;
+		width: 60px;
+	}
+	header div span {
+		font-size: 16px;
+		width: 60px;
+	}
 }
